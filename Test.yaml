@@ -49,7 +49,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸Fremont-VLESS-Reality"
+      - "🇺🇸Fremont-Vless"
       - "🇺🇸Fremont-AnyTLS"
       - "🇳🇱Amsterdam"
 
@@ -57,7 +57,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸Fremont-VLESS-Reality"
+      - "🇺🇸Fremont-Vless"
       - "🇺🇸Fremont-AnyTLS"
       - "🇳🇱Amsterdam"
 
