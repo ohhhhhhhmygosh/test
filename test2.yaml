@@ -42,9 +42,11 @@ proxies:
   network: tcp
   tls: true
   udp: true
+  
   flow: xtls-rprx-vision
   servername: go.microsoft.com
   client-fingerprint: chrome
+  
   reality-opts:
   public-key: Xjyg1qGJUXPbSYfzpBCgYSOnMVrAa2vSuZpCvD2fw3w
   short-id: ""
