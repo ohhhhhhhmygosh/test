@@ -24,7 +24,7 @@ proxies:
   - name: "🇺🇸Fremont-Anytls"
     type: anytls
     server: 23.142.204.152
-    port: 23852
+    port: 53921
     network: tcp
     tls: true
     udp: true
