@@ -230,7 +230,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - "🇺🇸Fremont-Vless"
-      - "🇺🇸Fremont-AnyTLS"
+      - "🇺🇸Fremont-Anytls"
       - "🇳🇱Amsterdam"
 
   - name: 中国大陆
@@ -238,7 +238,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - "🇺🇸Fremont-Vless"
-      - "🇺🇸Fremont-AnyTLS"
+      - "🇺🇸Fremont-Anytls"
       - "🇳🇱Amsterdam"
 
 rules:
