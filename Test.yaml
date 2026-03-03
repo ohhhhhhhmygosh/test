@@ -184,6 +184,15 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:
+  - name: "无法使用请更新订阅"
+    type: hysteria2
+    server: 185.205.194.136
+    port: 12345
+    password: "4Z5WFKY3RGmMGRFYBminwkVp"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
+    
   - name: "🇺🇸Fremont-Vless"
     type: vless
     server: 23.142.204.152
@@ -222,6 +231,20 @@ proxies:
     sni: bing.com
     skip-cert-verify: true
     udp: true
+    
+  - name: "🇺🇸 US"
+    type: trojan
+    server: us5.yylxjichang.lol
+    port: 8443
+    password: 0f6cfb69-b977-4eb1-a51f-02cb8ea9dccc
+    sni: us5.yylxjichang.lol
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: us5.yylxjichang.lol
+
 
 
 proxy-groups:
@@ -232,6 +255,7 @@ proxy-groups:
       - "🇺🇸Fremont-Vless"
       - "🇺🇸Fremont-Anytls"
       - "🇳🇱Amsterdam"
+      - "🇺🇸 US"
 
   - name: 中国大陆
     type: select
@@ -240,6 +264,7 @@ proxy-groups:
       - "🇺🇸Fremont-Vless"
       - "🇺🇸Fremont-Anytls"
       - "🇳🇱Amsterdam"
+      - "🇺🇸 US"
 
 rules:
   - GEOIP,CN,中国大陆
