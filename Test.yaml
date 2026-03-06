@@ -229,7 +229,6 @@ proxies:
     port: 38679
     password: "MVczRi1tHBHU+FL7zrAWBq7r"
     sni: bing.com
-    skip-cert-verify: true
     udp: true
   
 proxy-groups:
