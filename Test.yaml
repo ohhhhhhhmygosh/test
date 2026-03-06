@@ -230,6 +230,14 @@ proxies:
     password: "MVczRi1tHBHU+FL7zrAWBq7r"
     sni: bing.com
     udp: true
+    
+  - name: "🇳🇱Amsterdam-V6"
+    type: hysteria2
+    server: [2a12:bec4:1821:5eb::301]
+    port: 40443
+    password: "MVczRi1tHBHU+FL7zrAWBq7r"
+    sni: bing.com
+    udp: true
   
 proxy-groups:
   - name: 手动选择
@@ -239,6 +247,7 @@ proxy-groups:
       - "🇺🇸Fremont-Vless"
       - "🇺🇸Fremont-Anytls"
       - "🇳🇱Amsterdam"
+      - "🇳🇱Amsterdam-V6"
 
   - name: 中国大陆
     type: select
@@ -247,6 +256,7 @@ proxy-groups:
       - "🇺🇸Fremont-Vless"
       - "🇺🇸Fremont-Anytls"
       - "🇳🇱Amsterdam"
+      - "🇳🇱Amsterdam-V6"
 
 rules:
   - GEOIP,CN,中国大陆
