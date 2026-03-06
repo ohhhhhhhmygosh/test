@@ -231,7 +231,7 @@ proxies:
     sni: bing.com
     udp: true
     
-  - name: "🇳🇱Amsterdam-V6"
+  - name: "🇳🇱Amsterdam-V6(推荐)"
     type: hysteria2
     server: [2a12:bec4:1821:5eb::301]
     port: 40443
@@ -247,7 +247,7 @@ proxy-groups:
       - "🇺🇸Fremont-Vless"
       - "🇺🇸Fremont-Anytls"
       - "🇳🇱Amsterdam"
-      - "🇳🇱Amsterdam-V6"
+      - "🇳🇱Amsterdam-V6(推荐)"
 
   - name: 中国大陆
     type: select
@@ -256,7 +256,7 @@ proxy-groups:
       - "🇺🇸Fremont-Vless"
       - "🇺🇸Fremont-Anytls"
       - "🇳🇱Amsterdam"
-      - "🇳🇱Amsterdam-V6"
+      - "🇳🇱Amsterdam-V6(推荐)"
 
 rules:
   - GEOIP,CN,中国大陆
