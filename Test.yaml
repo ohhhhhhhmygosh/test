@@ -226,8 +226,8 @@ proxies:
   - name: "🇳🇱Amsterdam"
     type: hysteria2
     server: 185.205.194.136
-    port: 12345
-    password: "4Z5WFKY3RGmMGRFYBminwkVp"
+    port: 38679
+    password: "MVczRi1tHBHU+FL7zrAWBq7r"
     sni: bing.com
     skip-cert-verify: true
     udp: true
