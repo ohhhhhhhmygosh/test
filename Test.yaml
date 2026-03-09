@@ -184,7 +184,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:
-  - name: "本套订阅仅有1个IPv4节点"
+  - name: "本套订阅仅有2个IPv4节点"
     type: hysteria2
     server: 185.205.194.136
     port: 12345
