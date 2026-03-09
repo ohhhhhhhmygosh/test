@@ -184,7 +184,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:
-  - name: "无法使用请更新订阅"
+  - name: "本套订阅仅有1个IPv4节点"
     type: hysteria2
     server: 185.205.194.136
     port: 12345
@@ -193,72 +193,89 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇺🇸Fremont-Vless"
-    type: vless
-    server: 23.142.204.152
-    port: 44333
-    uuid: dea72ec8-3c64-4cbc-fcd8-c304c5035cdf
-    network: tcp
-    tls: true
-    udp: true
-
-    flow: xtls-rprx-vision
-    servername: go.microsoft.com
-    client-fingerprint: chrome
-
-    reality-opts:
-      public-key: Xjyg1qGJUXPbSYfzpBCgYSOnMVrAa2vSuZpCvD2fw3w
-      short-id: ""
-
-  - name: "🇺🇸Fremont-Anytls"
-    type: anytls
-    server: 23.142.204.152
-    port: 53921
-    network: tcp
-    tls: true
-    udp: true
-    flow: ""
-    servername: ""
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    password: "hanrui299792458%"
-
-  - name: "🇳🇱Amsterdam"
+  - name: "其余均为IPv6节点"
     type: hysteria2
     server: 185.205.194.136
-    port: 38679
-    password: "MVczRi1tHBHU+FL7zrAWBq7r"
+    port: 12345
+    password: "4Z5WFKY3RGmMGRFYBminwkVp"
     sni: bing.com
     skip-cert-verify: true
     udp: true
-    
-  - name: "🇳🇱Amsterdam-V6-推荐"
+
+  - name: "🇳🇱 Amsterdam-V4"
+    type: hysteria2
+    server: 185.205.194.136
+    port: 12345
+    password: "4Z5WFKY3RGmMGRFYBminwkVp"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
+
+  - name: "🇯🇵 Japan SoftBank"
+    type: vless
+    server: jp.0.5.x.nianyun.work
+    port: 25211
+    uuid: fd63e0fb-f9b5-40a3-85c1-e03c432e4c44
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.python.org
+    network: tcp
+    reality-opts:
+      public-key: "5iZE1qaF9WKwVTVWVZu9ma_eoZVWYmI179skqIGwNkc"
+      short-id: 17b32dcef7
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - name: "🇺🇸 Fremont"
+    type: hysteria2
+    server: "2602:fed2:7318:97::b9"
+    port: 40443
+    password: "rUUzZeC7jI4edMgxAColQFOk"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
+
+  - name: "🇳🇱 Amsterdam"
     type: hysteria2
     server: "2a12:bec4:1821:5eb::301"
     port: 40443
     password: "MVczRi1tHBHU+FL7zrAWBq7r"
     sni: bing.com
-    udp: true
     skip-cert-verify: true
+    udp: true
+
+  - name: "🇭🇰 HongKong"
+    type: hysteria2
+    server: "2406:ef80:1:2c36::32b"
+    port: 40443
+    password: "WuCxw/SPXHzFeOGFchKoPuJl"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
+
   
 proxy-groups:
   - name: 手动选择
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸Fremont-Vless"
-      - "🇺🇸Fremont-Anytls"
-      - "🇳🇱Amsterdam"
-      - "🇳🇱Amsterdam-V6-推荐"
+      - "🇺🇸 Fremont"
+      - "🇭🇰 HongKong"
+      - "🇳🇱 Amsterdam-V4"
+      - "🇳🇱 Amsterdam"
+      - "🇯🇵 Japan SoftBank"
 
   - name: 中国大陆
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸Fremont-Vless"
-      - "🇺🇸Fremont-Anytls"
-      - "🇳🇱Amsterdam"
-      - "🇳🇱Amsterdam-V6-推荐"
+      - "🇺🇸 Fremont"
+      - "🇭🇰 HongKong"
+      - "🇳🇱 Amsterdam-V4"
+      - "🇳🇱 Amsterdam"
+      - "🇯🇵 Japan SoftBank"
+
 
 rules:
   - GEOIP,CN,中国大陆
