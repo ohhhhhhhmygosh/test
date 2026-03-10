@@ -247,7 +247,7 @@ proxies:
 
   - name: "🇭🇰 HongKong"
     type: hysteria2
-    server: "2406:ef80:1:2c36::32b"
+    server: "2406:ef80:1:2c36::d6"
     port: 40443
     password: "ayLAC6M8DfOj3Nam7YgS6Qvu"
     sni: bing.com
