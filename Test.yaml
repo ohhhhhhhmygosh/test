@@ -230,8 +230,8 @@ proxies:
   - name: "🇺🇸 Fremont"
     type: hysteria2
     server: "2602:fed2:7318:97::b9"
-    port: 40443
-    password: "rUUzZeC7jI4edMgxAColQFOk"
+    port: 44940
+    password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
     udp: true
@@ -249,7 +249,7 @@ proxies:
     type: hysteria2
     server: "2406:ef80:1:2c36::32b"
     port: 40443
-    password: "WuCxw/SPXHzFeOGFchKoPuJl"
+    password: "ayLAC6M8DfOj3Nam7YgS6Qvu"
     sni: bing.com
     skip-cert-verify: true
     udp: true
