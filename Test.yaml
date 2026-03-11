@@ -253,7 +253,15 @@ proxies:
     sni: bing.com
     skip-cert-verify: true
     udp: true
-
+    
+  - name: "🇭🇺 匈牙利"
+    type: hysteria2
+    server: "2001:470:1f1b:57e::12a"
+    port: 44444
+    password: "han299792458%"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
   
 proxy-groups:
   - name: 手动选择
@@ -265,6 +273,7 @@ proxy-groups:
       - "🇳🇱 Amsterdam-V4"
       - "🇳🇱 Amsterdam"
       - "🇯🇵 Japan SoftBank"
+      - "🇭🇺 匈牙利"
 
   - name: 中国大陆
     type: select
@@ -275,6 +284,7 @@ proxy-groups:
       - "🇳🇱 Amsterdam-V4"
       - "🇳🇱 Amsterdam"
       - "🇯🇵 Japan SoftBank"
+      - "🇭🇺 匈牙利"
 
 
 rules:
