@@ -213,17 +213,17 @@ proxies:
 
   - name: "🇯🇵 Japan"
     type: vless
-    server: jp.0.5.x.nianyun.work
-    port: 25211
-    uuid: fd63e0fb-f9b5-40a3-85c1-e03c432e4c44
-    udp: true
-    tls: true
-    flow: xtls-rprx-vision
-    servername: www.python.org
+    server: 85.121.50.140
+    port: 51790
+    uuid: f4b90ef0-7a0b-43b2-5d79-be4c2486acb1
     network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
     reality-opts:
-      public-key: "5iZE1qaF9WKwVTVWVZu9ma_eoZVWYmI179skqIGwNkc"
-      short-id: 17b32dcef7
+      public-key: aLiI-hAN6fWHtEtHdAEwIy-cpJs9VLec3r0RYbMYb34
+      short-id: 3eaeb74eab69682e
     client-fingerprint: chrome
     skip-cert-verify: true
 
