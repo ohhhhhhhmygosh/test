@@ -253,6 +253,13 @@ proxies:
     sni: bing.com
     skip-cert-verify: true
     udp: true
+    
+  - name: "🇦🇺 墨尔本"
+    type: anytls
+    server: 152.69.188.3
+    port: 18449
+    skip-cert-verify: true
+    udp: true
   
 proxy-groups:
   - name: 手动选择
@@ -264,6 +271,7 @@ proxy-groups:
       - "🇳🇱 Amsterdam-V4"
       - "🇳🇱 Amsterdam"
       - "🇯🇵 Japan"
+      - "🇦🇺 墨尔本"
 
   - name: 中国大陆
     type: select
