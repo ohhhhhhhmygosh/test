@@ -184,7 +184,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:
-  - name: "本套订阅仅有2个IPv4节点"
+  - name: "本套订阅仅有1个IPv4节点"
     type: hysteria2
     server: 185.205.194.136
     port: 12345
@@ -205,13 +205,13 @@ proxies:
   - name: "🇳🇱 Amsterdam-V4"
     type: hysteria2
     server: 185.205.194.136
-    port: 12345
-    password: "MVczRi1tHBHU+FL7zrAWBq7r"
+    port: 14443
+    password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
     udp: true
 
-  - name: "🇯🇵 Japan SoftBank"
+  - name: "🇯🇵 Japan"
     type: vless
     server: jp.0.5.x.nianyun.work
     port: 25211
@@ -230,7 +230,7 @@ proxies:
   - name: "🇺🇸 Fremont"
     type: hysteria2
     server: "2602:fed2:7318:97::b9"
-    port: 44940
+    port: 23456
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
@@ -239,8 +239,8 @@ proxies:
   - name: "🇳🇱 Amsterdam"
     type: hysteria2
     server: "2a12:bec4:1821:5eb::301"
-    port: 40443
-    password: "MVczRi1tHBHU+FL7zrAWBq7r"
+    port: 2040
+    password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
     udp: true
@@ -250,15 +250,6 @@ proxies:
     server: "2406:ef80:1:2c36::1b1"
     port: 40443
     password: "ayLAC6M8DfOj3Nam7YgS6Qvu"
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
-    
-  - name: "🇭🇺 匈牙利"
-    type: hysteria2
-    server: "2001:470:1f1b:57e::12a"
-    port: 44444
-    password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
     udp: true
@@ -272,8 +263,7 @@ proxy-groups:
       - "🇭🇰 HongKong"
       - "🇳🇱 Amsterdam-V4"
       - "🇳🇱 Amsterdam"
-      - "🇯🇵 Japan SoftBank"
-      - "🇭🇺 匈牙利"
+      - "🇯🇵 Japan"
 
   - name: 中国大陆
     type: select
@@ -284,7 +274,6 @@ proxy-groups:
       - "🇳🇱 Amsterdam-V4"
       - "🇳🇱 Amsterdam"
       - "🇯🇵 Japan SoftBank"
-      - "🇭🇺 匈牙利"
 
 
 rules:
