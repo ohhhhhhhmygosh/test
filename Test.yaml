@@ -258,6 +258,7 @@ proxies:
     type: anytls
     server: 152.69.188.3
     port: 18449
+    password: "han299792458%"
     skip-cert-verify: true
     udp: true
   
