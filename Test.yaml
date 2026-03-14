@@ -184,7 +184,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:
-  - name: "本套订阅仅有1个IPv4节点"
+  - name: "未标注v4的节点为v6节点"
     type: hysteria2
     server: 185.205.194.136
     port: 12345
@@ -193,7 +193,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "其余均为IPv6节点"
+  - name: "多个节点不可用时请尝试更新订阅"
     type: hysteria2
     server: 185.205.194.136
     port: 12345
@@ -211,7 +211,7 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇯🇵 Japan"
+  - name: "🇯🇵 Japan（不可用）"
     type: vless
     server: 85.121.50.140
     port: 51790
@@ -254,7 +254,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇦🇺 墨尔本"
+  - name: "🇦🇺 墨尔本-v4"
     type: anytls
     server: 152.69.188.3
     port: 18449
@@ -271,8 +271,8 @@ proxy-groups:
       - "🇭🇰 HongKong"
       - "🇳🇱 Amsterdam-V4"
       - "🇳🇱 Amsterdam"
-      - "🇯🇵 Japan"
-      - "🇦🇺 墨尔本"
+      - "🇯🇵 Japan（不可用）"
+      - "🇦🇺 墨尔本-v4"
 
   - name: 中国大陆
     type: select
