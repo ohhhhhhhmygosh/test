@@ -193,16 +193,16 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇳🇱 Amsterdam-v4"
+  - name: "🇭🇰 HongKong-v6"
     type: hysteria2
-    server: 185.205.194.136
-    port: 14443
-    password: "han299792458%"
+    server: "2406:ef80:1:2c36::1b1"
+    port: 40443
+    password: "ayLAC6M8DfOj3Nam7YgS6Qvu"
     sni: bing.com
     skip-cert-verify: true
     udp: true
-
-  - name: "🇸🇬 Singapore-v6"
+    
+  - name: "🇸🇬 Singapore-v4"
     type: anytls
     server: 213.35.99.49
     port: 20044
@@ -228,11 +228,11 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇭🇰 HongKong-v6"
+  - name: "🇳🇱 Amsterdam-v4"
     type: hysteria2
-    server: "2406:ef80:1:2c36::1b1"
-    port: 40443
-    password: "ayLAC6M8DfOj3Nam7YgS6Qvu"
+    server: 185.205.194.136
+    port: 14443
+    password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
     udp: true
@@ -263,7 +263,7 @@ proxy-groups:
       - DIRECT
       - "🇺🇸 Fremont-v6"
       - "🇭🇰 HongKong-v6"
-      - "🇳🇱 Amsterdam-V4"
+      - "🇳🇱 Amsterdam-v4"
       - "🇳🇱 Amsterdam-v6"
       - "🇸🇬 Singapore-v4"
 
