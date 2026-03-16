@@ -212,7 +212,7 @@ proxies:
 
   - name: "🇺🇸 Fremont-v6"
     type: hysteria2
-    server: "2602:fed2:7318:97::b9"
+    server: "2602:fed2:7318:97::126"
     port: 23456
     password: "han299792458%"
     sni: bing.com
@@ -221,8 +221,8 @@ proxies:
 
   - name: "🇳🇱 Amsterdam-v6"
     type: hysteria2
-    server: "2a12:bec4:1821:5eb::301"
-    port: 2040
+    server: "2a12:bec4:1821:5eb::150"
+    port: 20044
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
@@ -231,7 +231,7 @@ proxies:
   - name: "🇳🇱 Amsterdam-v4"
     type: hysteria2
     server: 185.205.194.136
-    port: 14443
+    port: 41034
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
