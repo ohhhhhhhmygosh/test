@@ -237,6 +237,24 @@ proxies:
     skip-cert-verify: true
     udp: true
     
+  - name: "🇹🇷 土耳其-v6"
+    type: hysteria2
+    server: "2001:470:1f1b:57e::124"
+    port: 20033
+    password: "han299792458%"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
+    
+  - name: "🇹🇷 土耳其-v4"
+    type: hysteria2
+    server: "82.22.99.245"
+    port: 26508
+    password: "han299792458%"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
+    
   - name: "🇦🇺 墨尔本-v4"
     type: anytls
     server: 152.69.188.3
@@ -255,6 +273,8 @@ proxy-groups:
       - "🇳🇱 Amsterdam-v4"
       - "🇳🇱 Amsterdam-v6"
       - "🇸🇬 Singapore-v4"
+      - "🇹🇷 土耳其-v4"
+      - "🇹🇷 土耳其-v6"
       - "🇦🇺 墨尔本-v4"
 
   - name: 中国大陆
@@ -263,8 +283,6 @@ proxy-groups:
       - DIRECT
       - "🇺🇸 Fremont-v6"
       - "🇭🇰 HongKong-v6"
-      - "🇳🇱 Amsterdam-v4"
-      - "🇳🇱 Amsterdam-v6"
       - "🇸🇬 Singapore-v4"
 
 
