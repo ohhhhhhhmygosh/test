@@ -239,7 +239,7 @@ proxies:
     
   - name: "🇹🇷 土耳其-v6"
     type: hysteria2
-    server: "2001:470:1f1b:57e::124"
+    server: "2001:470:1f1b:57e::13a"
     port: 20033
     password: "han299792458%"
     sni: bing.com
