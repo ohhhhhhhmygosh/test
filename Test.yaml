@@ -184,7 +184,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:  
-  - name: "多个节点不可用时请尝试更新订阅"
+  - name: "每周六晚维护节点，更新订阅"
     type: hysteria2
     server: 185.205.194.136
     port: 12345
@@ -202,13 +202,6 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇸🇬 Singapore-v4"
-    type: anytls
-    server: 213.35.99.49
-    port: 20044
-    password: "han299792458"
-    skip-cert-verify: true
-    udp: true
 
   - name: "🇺🇸 Fremont-v6"
     type: hysteria2
@@ -272,7 +265,6 @@ proxy-groups:
       - "🇭🇰 HongKong-v6"
       - "🇳🇱 Amsterdam-v4"
       - "🇳🇱 Amsterdam-v6"
-      - "🇸🇬 Singapore-v4"
       - "🇹🇷 土耳其-v4"
       - "🇹🇷 土耳其-v6"
       - "🇦🇺 墨尔本-v4"
@@ -283,7 +275,6 @@ proxy-groups:
       - DIRECT
       - "🇺🇸 Fremont-v6"
       - "🇭🇰 HongKong-v6"
-      - "🇸🇬 Singapore-v4"
 
 
 rules:
