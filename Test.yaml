@@ -209,7 +209,22 @@ proxies:
     password: "han299792458%"
     skip-cert-verify: true
     udp: true
-  
+    
+  - name: "[japan] Reality"
+    type: vless
+    server: 108.187.32.63
+    port: 15489
+    uuid: 16111CEA-B635-442B-842D-8A6B2D1EAD87
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    network: tcp
+    reality-opts:
+      public-key: "66ayTeZfHaBIuiJ1c5FUJ1wy0naa38_PaBTPBErAZDA"
+      short-id: "cc1e5cb9b212b19b"
+    client-fingerprint: chrome
+    
   - name: "🇺🇸 Fremont-v6"
     type: hysteria2
     server: "2602:fed2:7318:97::122"
