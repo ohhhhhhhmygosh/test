@@ -164,7 +164,7 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇭🇰 HongKong-v6"
+  - name: "🇭🇰 HongKong v6"
     type: hysteria2
     server: "2406:ef80:1:2c36::24b"
     port: 20033
@@ -173,7 +173,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇭🇰 HongKong-v4"
+  - name: "🇭🇰 HongKong"
     type: anytls
     server: 216.250.97.79
     port: 23456
@@ -181,7 +181,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "[japan] Reality"
+  - name: "🇯🇵 Japan"
     type: vless
     server: 108.187.32.63
     port: 15489
@@ -196,7 +196,7 @@ proxies:
       short-id: "cc1e5cb9b212b19b"
     client-fingerprint: chrome
     
-  - name: "🇺🇸 Fremont-v6"
+  - name: "🇺🇸 Fremont v6"
     type: hysteria2
     server: "2602:fed2:7318:97::122"
     port: 23456
@@ -205,7 +205,7 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇳🇱 Amsterdam-v6"
+  - name: "🇳🇱 Amsterdam v6"
     type: hysteria2
     server: "2a12:bec4:1821:5eb::13f"
     port: 20044
@@ -214,7 +214,7 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇳🇱 Amsterdam-v4"
+  - name: "🇳🇱 Amsterdam"
     type: hysteria2
     server: 185.205.194.136
     port: 41034
@@ -223,7 +223,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇹🇷 土耳其-v6"
+  - name: "🇹🇷 土耳其 v6"
     type: hysteria2
     server: "2001:470:1f1b:57e::13a"
     port: 20033
@@ -232,7 +232,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇹🇷 土耳其-v4"
+  - name: "🇹🇷 土耳其"
     type: hysteria2
     server: "82.22.99.245"
     port: 26508
@@ -241,7 +241,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇦🇺 墨尔本-v4"
+  - name: "🇦🇺 墨尔本"
     type: anytls
     server: 152.69.188.3
     port: 18449
@@ -249,43 +249,28 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "japan Reality"
-    type: vless
-    server: 108.187.32.63
-    port: 15489
-    uuid: e4281dfc-50b1-5c03-7e08-4e0160b90d1e
-    network: tcp
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    servername: www.yahoo.com
-    reality-opts:
-      public-key: 66ayTeZfHaBIuiJ1c5FUJ1wy0naa38_PaBTPBErAZDA
-      short-id: cc1e5cb9b212b19b
-    client-fingerprint: chrome
-
   
 proxy-groups:
   - name: 手动选择
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸 Fremont-v6"
-      - "🇭🇰 HongKong-v6"
-      - "🇭🇰 HongKong-v4"
-      - "🇳🇱 Amsterdam-v4"
-      - "🇳🇱 Amsterdam-v6"
-      - "🇹🇷 土耳其-v4"
-      - "🇹🇷 土耳其-v6"
-      - "🇦🇺 墨尔本-v4"
+      - "🇺🇸 Fremont v6"
+      - "🇭🇰 HongKong v6"
+      - "🇭🇰 HongKong"
+      - "🇳🇱 Amsterdam"
+      - "🇳🇱 Amsterdam v6"
+      - "🇹🇷 土耳其"
+      - "🇹🇷 土耳其 v6"
+      - "🇦🇺 墨尔本"
 
   - name: 中国大陆
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸 Fremont-v6"
-      - "🇭🇰 HongKong-v6"
-      - "🇭🇰 HongKong-v4"
+      - "🇺🇸 Fremont v6"
+      - "🇭🇰 HongKong v6"
+      - "🇭🇰 HongKong"
 
 
 rules:
