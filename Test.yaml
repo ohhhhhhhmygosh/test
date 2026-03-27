@@ -239,21 +239,12 @@ proxies:
     sni: bing.com
     skip-cert-verify: true
     udp: true
-    
-  - name: "🇹🇷 土耳其 01 v6"
-    type: hysteria2
-    server: "2001:470:1f1b:57e::13a"
-    port: 20033
-    password: "han299792458%"
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
 
   - name: "🇹🇷 土耳其 01"
     type: vless
     server: 82.22.99.195
     port: 59109
-    uuid: 50964C34-5441-4F84-8C80-8A156DA4D1FC
+    uuid: b6dd5067-4b6a-0a88-b4e8-69870c2b5a65
     udp: true
     tls: true
     flow: xtls-rprx-vision
@@ -263,6 +254,15 @@ proxies:
       public-key: "LWwFduhrKIpIcGheg-jN0630_oEmyxj3H2SnaTvC7Qk"
       short-id: "158e3e7316785c78"
     client-fingerprint: chrome
+
+  - name: "🇹🇷 土耳其 02 v6"
+    type: hysteria2
+    server: "2001:470:1f1b:57e::13a"
+    port: 20033
+    password: "han299792458%"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
 
   - name: "🇹🇷 土耳其 02"
     type: hysteria2
