@@ -163,8 +163,25 @@ proxies:
     sni: bing.com
     skip-cert-verify: true
     udp: true
+    
+  - name: "🇭🇰 HongKong 01 v6"
+    type: hysteria2
+    server: "2400:c620:22:203::2ab"
+    port: 23456
+    password: "han299792458%"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
 
-  - name: "🇭🇰 HongKong v6"
+  - name: "🇭🇰 HongKong 01"
+    type: anytls
+    server: 23.147.172.241
+    port: 20001
+    password: "han299792458%"
+    skip-cert-verify: true
+    udp: true
+
+  - name: "🇭🇰 HongKong 02 v6"
     type: hysteria2
     server: "2406:ef80:1:2c36::24b"
     port: 20033
@@ -173,7 +190,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇭🇰 HongKong"
+  - name: "🇭🇰 HongKong 02"
     type: anytls
     server: 216.250.97.79
     port: 23456
@@ -223,7 +240,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇹🇷 土耳其 v6"
+  - name: "🇹🇷 土耳其 01 v6"
     type: hysteria2
     server: "2001:470:1f1b:57e::13a"
     port: 20033
@@ -231,8 +248,23 @@ proxies:
     sni: bing.com
     skip-cert-verify: true
     udp: true
-    
-  - name: "🇹🇷 土耳其"
+
+  - name: "🇹🇷 土耳其 01"
+    type: vless
+    server: 82.22.99.195
+    port: 59109
+    uuid: 50964C34-5441-4F84-8C80-8A156DA4D1FC
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    network: tcp
+    reality-opts:
+      public-key: "LWwFduhrKIpIcGheg-jN0630_oEmyxj3H2SnaTvC7Qk"
+      short-id: "158e3e7316785c78"
+    client-fingerprint: chrome
+
+  - name: "🇹🇷 土耳其 02"
     type: hysteria2
     server: "82.22.99.245"
     port: 26508
@@ -256,12 +288,10 @@ proxy-groups:
     proxies:
       - DIRECT
       - "🇺🇸 Fremont v6"
-      - "🇭🇰 HongKong v6"
-      - "🇭🇰 HongKong"
+      - "🇭🇰 HongKong 01"
+      - "🇭🇰 HongKong 02"
       - "🇳🇱 Amsterdam"
       - "🇳🇱 Amsterdam v6"
-      - "🇹🇷 土耳其"
-      - "🇹🇷 土耳其 v6"
       - "🇦🇺 墨尔本"
 
   - name: 中国大陆
