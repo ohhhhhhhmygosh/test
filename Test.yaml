@@ -185,7 +185,7 @@ proxies:
     type: vless
     server: 108.187.32.63
     port: 15489
-    uuid: 16111CEA-B635-442B-842D-8A6B2D1EAD87
+    uuid: e4281dfc-50b1-5c03-7e08-4e0160b90d1e
     udp: true
     tls: true
     flow: xtls-rprx-vision
