@@ -263,7 +263,7 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: [japan] Reality
+  - name: "japan] Reality"
     type: vless
     server: 108.187.32.63
     port: 15489
