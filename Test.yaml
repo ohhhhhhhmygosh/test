@@ -281,6 +281,20 @@ proxies:
     skip-cert-verify: true
     udp: true
 
+  - name: 🇩🇪 Germany
+    type: vless
+    server: "2001:41d0:700:242:0000:0000:0000:7437"
+    port: 19594
+    uuid: 0771d888-608d-0df6-d77d-6a354f5163be
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts:
+      public-key: RdKZ5TAQPLtqcdwjmiDrMCze_7_DrvnooYMiNrwIYGQ
+      short-id: 6b54108ade1d016b
+    client-fingerprint: chrome
   
 proxy-groups:
   - name: 手动选择
