@@ -213,7 +213,7 @@ proxies:
       short-id: "cc1e5cb9b212b19b"
     client-fingerprint: chrome
     
-  - name: "🇺🇸 Fremont v6"
+  - name: "🇺🇸 United States v6"
     type: hysteria2
     server: "2602:fed2:7318:97::122"
     port: 23456
@@ -240,7 +240,7 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇹🇷 土耳其 01"
+  - name: "🇹🇷 Turkey 01"
     type: vless
     server: 82.22.99.195
     port: 59109
@@ -255,7 +255,7 @@ proxies:
       short-id: "158e3e7316785c78"
     client-fingerprint: chrome
 
-  - name: "🇹🇷 土耳其 02 v6"
+  - name: "🇹🇷 Turkey 02 v6"
     type: hysteria2
     server: "2001:470:1f1b:57e::13a"
     port: 20033
@@ -264,7 +264,7 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇹🇷 土耳其 02"
+  - name: "🇹🇷 Turkey 02"
     type: hysteria2
     server: "82.22.99.245"
     port: 26508
@@ -273,7 +273,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇦🇺 墨尔本"
+  - name: "🇦🇺 Australia"
     type: anytls
     server: 152.69.188.3
     port: 18449
@@ -287,20 +287,29 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸 Fremont v6"
+      - "🇺🇸 United States v6"
       - "🇭🇰 HongKong 01"
+      - "🇭🇰 HongKong 01 v6"
       - "🇭🇰 HongKong 02"
+      - "🇭🇰 HongKong 02 v6"
+      - "🇯🇵 Japan"
+      - "🇹🇷 Turkey 01"
+      - "🇹🇷 Turkey 02"
+      - "🇹🇷 Turkey 02 v6"
       - "🇳🇱 Amsterdam"
       - "🇳🇱 Amsterdam v6"
-      - "🇦🇺 墨尔本"
+      - "🇦🇺 Australia"
 
   - name: 中国大陆
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸 Fremont v6"
-      - "🇭🇰 HongKong v6"
-      - "🇭🇰 HongKong"
+      - "🇺🇸 United States v6"
+      - "🇭🇰 HongKong 01"
+      - "🇭🇰 HongKong 01 v6"
+      - "🇭🇰 HongKong 02"
+      - "🇭🇰 HongKong 02 v6"
+      - "🇯🇵 Japan"
 
 
 rules:
