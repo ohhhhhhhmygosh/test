@@ -213,14 +213,23 @@ proxies:
       short-id: "cc1e5cb9b212b19b"
     client-fingerprint: chrome
     
-  - name: "🇺🇸 United States v6"
+  - name: "🇺🇸 United States 01"
+    type: anytls
+    server: 23.142.204.152
+    port: 26531
+    password: "han299792458%"
+    skip-cert-verify: true
+    udp: true
+    
+  - name: "🇺🇸 United States 02 v6"
     type: hysteria2
-    server: "2602:fed2:7318:97::122"
-    port: 23456
+    server: "2001:470:d:f47:a26:1:0:14"
+    port: 22222
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
     udp: true
+
 
   - name: "🇳🇱 Amsterdam v6"
     type: hysteria2
@@ -301,11 +310,12 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸 United States v6"
       - "🇭🇰 HongKong 01"
       - "🇭🇰 HongKong 01 v6"
       - "🇭🇰 HongKong 02"
       - "🇭🇰 HongKong 02 v6"
+      - "🇺🇸 United States 01"
+      - "🇺🇸 United States 02 v6"
       - "🇯🇵 Japan"
       - "🇹🇷 Turkey 01"
       - "🇹🇷 Turkey 02"
@@ -318,12 +328,13 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - "🇺🇸 United States v6"
       - "🇭🇰 HongKong 01"
       - "🇭🇰 HongKong 01 v6"
       - "🇭🇰 HongKong 02"
       - "🇭🇰 HongKong 02 v6"
       - "🇯🇵 Japan"
+      - "🇺🇸 United States 01"
+      - "🇺🇸 United States 02 v6"
 
 
 rules:
