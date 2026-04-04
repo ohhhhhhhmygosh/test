@@ -198,20 +198,6 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇯🇵 Japan"
-    type: vless
-    server: 108.187.32.63
-    port: 15489
-    uuid: e4281dfc-50b1-5c03-7e08-4e0160b90d1e
-    udp: true
-    tls: true
-    flow: xtls-rprx-vision
-    servername: www.yahoo.com
-    network: tcp
-    reality-opts:
-      public-key: "66ayTeZfHaBIuiJ1c5FUJ1wy0naa38_PaBTPBErAZDA"
-      short-id: "cc1e5cb9b212b19b"
-    client-fingerprint: chrome
     
   - name: "🇺🇸 United States 01"
     type: anytls
@@ -249,25 +235,20 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: "🇹🇷 Turkey 01"
-    type: vless
-    server: 82.22.99.195
-    port: 59109
-    uuid: b6dd5067-4b6a-0a88-b4e8-69870c2b5a65
-    udp: true
-    tls: true
-    flow: xtls-rprx-vision
-    servername: www.yahoo.com
-    network: tcp
-    reality-opts:
-      public-key: "LWwFduhrKIpIcGheg-jN0630_oEmyxj3H2SnaTvC7Qk"
-      short-id: "158e3e7316785c78"
-    client-fingerprint: chrome
-
-  - name: "🇹🇷 Turkey 02"
+  - name: "🇹🇷 Turkey"
     type: hysteria2
     server: "82.22.99.245"
-    port: 26508
+    port: 65113
+    password: "han299792458%"
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
+
+
+  - name: "🇹🇷 Turkey v6"
+    type: hysteria2
+    server: "2001:470:1f1b:57e::59"
+    port: 22222
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
@@ -281,21 +262,6 @@ proxies:
     skip-cert-verify: true
     udp: true
 
-  - name: 🇩🇪 Germany
-    type: vless
-    server: "2001:41d0:700:242:0000:0000:0000:7437"
-    port: 19594
-    uuid: 0771d888-608d-0df6-d77d-6a354f5163be
-    network: tcp
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    servername: www.yahoo.com
-    reality-opts:
-      public-key: RdKZ5TAQPLtqcdwjmiDrMCze_7_DrvnooYMiNrwIYGQ
-      short-id: 6b54108ade1d016b
-    client-fingerprint: chrome
-  
 proxy-groups:
   - name: 手动选择
     type: select
@@ -307,9 +273,6 @@ proxy-groups:
       - "🇭🇰 HongKong 02 v6"
       - "🇺🇸 United States 01"
       - "🇺🇸 United States 02 v6"
-      - "🇯🇵 Japan"
-      - "🇹🇷 Turkey 01"
-      - "🇹🇷 Turkey 02"
       - "🇳🇱 Amsterdam"
       - "🇳🇱 Amsterdam v6"
       - "🇦🇺 Australia"
