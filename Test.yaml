@@ -175,7 +175,7 @@ proxies:
     
   - name: "🇭🇰 HongKong"
     type: anytls
-    server: 23.147.172.241
+    server: 216.250.97.79
     port: 23456
     password: "han299792458%"
     skip-cert-verify: true
