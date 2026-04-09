@@ -157,31 +157,14 @@ dns:
 proxies:  
   - name: "每周六晚维护节点"
     type: hysteria2
-    server: 185.205.194.136
+    server: 1.1.1.1
     port: 12345
-    password: "MVczRi1tHBHU+FL7zrAWBq7r"
+    password: "123456"
     sni: bing.com
     skip-cert-verify: true
     udp: true
     
-  - name: "🇭🇰 HongKong 01 v6"
-    type: hysteria2
-    server: "2400:c620:22:203::2ab"
-    port: 23456
-    password: "han299792458%"
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
-
-  - name: "🇭🇰 HongKong 01"
-    type: anytls
-    server: 23.147.172.241
-    port: 20001
-    password: "han299792458%"
-    skip-cert-verify: true
-    udp: true
-
-  - name: "🇭🇰 HongKong 02 v6"
+  - name: "🇭🇰 HongKong v6"
     type: hysteria2
     server: "2406:ef80:1:2c36::24b"
     port: 20033
@@ -190,9 +173,9 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇭🇰 HongKong 02"
+  - name: "🇭🇰 HongKong"
     type: anytls
-    server: 216.250.97.79
+    server: 23.147.172.241
     port: 23456
     password: "han299792458%"
     skip-cert-verify: true
@@ -209,7 +192,7 @@ proxies:
     
   - name: "🇺🇸 United States 02 v6"
     type: hysteria2
-    server: "2602:fed2:7318:97::304"
+    server: "2602:fed2:7318:97::30a"
     port: 22222
     password: "han299792458%"
     sni: bing.com
@@ -219,7 +202,7 @@ proxies:
 
   - name: "🇳🇱 Amsterdam v6"
     type: hysteria2
-    server: "2a12:bec4:1821:5eb::13f"
+    server: "2a12:bec4:1821:5eb::123"
     port: 20044
     password: "han299792458%"
     sni: bing.com
