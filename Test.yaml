@@ -250,10 +250,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - "🇭🇰 HongKong 01"
-      - "🇭🇰 HongKong 01 v6"
-      - "🇭🇰 HongKong 02"
-      - "🇭🇰 HongKong 02 v6"
+      - "🇭🇰 HongKong"
+      - "🇭🇰 HongKong v6"
       - "🇺🇸 United States 01 v6"
       - "🇺🇸 United States 02 v6"
       - "🇳🇱 Amsterdam"
@@ -264,10 +262,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - "🇭🇰 HongKong 01"
-      - "🇭🇰 HongKong 01 v6"
-      - "🇭🇰 HongKong 02"
-      - "🇭🇰 HongKong 02 v6"
+      - "🇭🇰 HongKong"
+      - "🇭🇰 HongKong v6"
       - "🇺🇸 United States 01 v6"
       - "🇺🇸 United States 02 v6"
 
