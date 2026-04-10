@@ -155,7 +155,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:  
-  - name: "每周六晚维护节点"
+  - name: "每周六晚维护节点，HK暂时不可用"
     type: hysteria2
     server: 1.1.1.1
     port: 12345
@@ -166,17 +166,17 @@ proxies:
     
   - name: "🇭🇰 HongKong v6"
     type: hysteria2
-    server: "2406:ef80:1:2c36::24b"
-    port: 20033
+    server: "2400:c620:22:203::2ab"
+    port: 23456
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
     udp: true
-    
+
   - name: "🇭🇰 HongKong"
     type: anytls
-    server: 216.250.97.79
-    port: 23456
+    server: 23.147.172.241
+    port: 20001
     password: "han299792458%"
     skip-cert-verify: true
     udp: true
