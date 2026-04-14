@@ -166,18 +166,10 @@ proxies:
     
   - name: "🇭🇰 HongKong v6"
     type: hysteria2
-    server: "2400:c620:22:203::2ab"
-    port: 23456
+    server: "2400:c620:22:a9::3bf"
+    port: 19408
     password: "han299792458%"
     sni: bing.com
-    skip-cert-verify: true
-    udp: true
-
-  - name: "🇭🇰 HongKong"
-    type: anytls
-    server: 23.147.172.241
-    port: 20001
-    password: "han299792458%"
     skip-cert-verify: true
     udp: true
     
