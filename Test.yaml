@@ -184,8 +184,8 @@ proxies:
     
   - name: "🇺🇸 United States 02 v6"
     type: hysteria2
-    server: "2602:fed2:7318:97::30a"
-    port: 22222
+    server: "2001:470:d:673::12c"
+    port: 19408
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
@@ -205,25 +205,6 @@ proxies:
     type: hysteria2
     server: 185.205.194.136
     port: 41034
-    password: "han299792458%"
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
-
-  - name: "🇹🇷 Turkey"
-    type: hysteria2
-    server: "82.22.99.245"
-    port: 65113
-    password: "han299792458%"
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
-
-
-  - name: "🇹🇷 Turkey v6"
-    type: hysteria2
-    server: "2001:470:1f1b:57e::59"
-    port: 22222
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
