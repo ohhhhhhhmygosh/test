@@ -173,7 +173,7 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇺🇸 United States 01 v6"
+  - name: "🇺🇸 United States v6"
     type: hysteria2
     server: "2001:470:d:f47:a26:1:0:14"
     port: 40443
@@ -182,9 +182,9 @@ proxies:
     skip-cert-verify: true
     udp: true
     
-  - name: "🇺🇸 United States 02 v6"
+  - name: "🇩🇪 Germany v6"
     type: hysteria2
-    server: "2001:470:d:673::12c"
+    server: "2602:fb54:1801:167::138"
     port: 19408
     password: "han299792458%"
     sni: bing.com
@@ -194,7 +194,7 @@ proxies:
 
   - name: "🇳🇱 Amsterdam v6"
     type: hysteria2
-    server: "2a12:bec4:1821:5eb::123"
+    server: "2a12:bec4:1821:5eb::14d"
     port: 20044
     password: "han299792458%"
     sni: bing.com
@@ -225,8 +225,7 @@ proxy-groups:
       - DIRECT
       - "🇭🇰 HongKong"
       - "🇭🇰 HongKong v6"
-      - "🇺🇸 United States 01 v6"
-      - "🇺🇸 United States 02 v6"
+      - "🇺🇸 United States v6"
       - "🇳🇱 Amsterdam"
       - "🇳🇱 Amsterdam v6"
       - "🇦🇺 Australia"
