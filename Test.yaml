@@ -155,7 +155,7 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:  
-  - name: "每周六晚维护节点"
+  - name: "节点不通请更新订阅"
     type: hysteria2
     server: 1.1.1.1
     port: 12345
