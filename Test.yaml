@@ -184,19 +184,15 @@ proxies:
     sni: bing.com
     skip-cert-verify: true
     udp: true
-    
+
   - name: "🇩🇪 Germany v6"
     type: hysteria2
     server: "2602:fb54:1801:167::151"
     port: 19408
     password: "han299792458%"
-    udp: true
-    tls:
-      sni: bing.com
-      insecure: false
-      pinSHA256: "ECD976249A2163A690A31D0BB1CEE58C0A7AD8DD370FF8E91CC8F7E7315A6F30"
-
-
+    sni: bing.com
+    skip-cert-verify: false
+    pinSHA256: ECD976249A2163A690A31D0BB1CEE58C0A7AD8DD370FF8E91CC8F7E7315A6F30
 
   - name: "🇳🇱 Amsterdam v6"
     type: hysteria2
