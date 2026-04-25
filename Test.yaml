@@ -169,12 +169,9 @@ proxies:
     server: "2400:c620:22:a9::3bf"
     port: 19408
     password: "han299792458%"
-    udp: true
-    tls:
-      sni: bing.com
-      insecure: false
-      pinSHA256: "ECD976249A2163A690A31D0BB1CEE58C0A7AD8DD370FF8E91CC8F7E7315A6F30"
-
+    sni: bing.com
+    skip-cert-verify: false
+    pinSHA256: D899B40EFA78D17A1F082129EE8B80DB876172E2EC664452F963ED23E3948172
     
   - name: "🇺🇸 United States v6"
     type: hysteria2
@@ -182,12 +179,21 @@ proxies:
     port: 40443
     password: "cfhW13xrnm0675TuTdxhRL0+"
     sni: bing.com
-    skip-cert-verify: true
-    udp: true
-
+    skip-cert-verify: false
+    pinSHA256: 5716083CD894E48D842A6F5E0F3AD7B4C886715478290AEC5D2F7EDE96B2B3D7
+    
   - name: "🇩🇪 Germany v6"
     type: hysteria2
     server: "2602:fb54:1801:167::151"
+    port: 19408
+    password: "han299792458%"
+    sni: bing.com
+    skip-cert-verify: false
+    pinSHA256: ECD976249A2163A690A31D0BB1CEE58C0A7AD8DD370FF8E91CC8F7E7315A6F30
+ 
+  - name: "🇩🇪 Germany"
+    type: hysteria2
+    server: "212.60.153.109"
     port: 19408
     password: "han299792458%"
     sni: bing.com
@@ -200,8 +206,8 @@ proxies:
     port: 20044
     password: "han299792458%"
     sni: bing.com
-    skip-cert-verify: true
-    udp: true
+    skip-cert-verify: false
+    pinSHA256: 6B47529CD9CF6BAC3D8C9D06EF560511C64E956C692F5385FC6ACD19C7A87E3A
 
   - name: "🇳🇱 Amsterdam"
     type: hysteria2
@@ -209,29 +215,31 @@ proxies:
     port: 41034
     password: "han299792458%"
     sni: bing.com
-    skip-cert-verify: true
-    udp: true
+    skip-cert-verify: false
+    pinSHA256: 6B47529CD9CF6BAC3D8C9D06EF560511C64E956C692F5385FC6ACD19C7A87E3A
 
 proxy-groups:
   - name: 手动选择
     type: select
     proxies:
       - DIRECT
-      - "🇭🇰 HongKong"
       - "🇭🇰 HongKong v6"
       - "🇺🇸 United States v6"
       - "🇳🇱 Amsterdam"
       - "🇳🇱 Amsterdam v6"
+      - "🇩🇪 Germany v6"
+      - "🇩🇪 Germany"
 
   - name: 中国大陆
     type: select
     proxies:
       - DIRECT
-      - "🇭🇰 HongKong"
       - "🇭🇰 HongKong v6"
-      - "🇺🇸 United States 01 v6"
-      - "🇺🇸 United States 02 v6"
-
+      - "🇺🇸 United States v6"
+      - "🇳🇱 Amsterdam"
+      - "🇳🇱 Amsterdam v6"
+      - "🇩🇪 Germany v6"
+      - "🇩🇪 Germany"
 
 rules:
   - GEOIP,CN,中国大陆
