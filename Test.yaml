@@ -166,7 +166,7 @@ proxies:
     
   - name: "🇭🇰 HongKong v6"
     type: hysteria2
-    server: "2400:c620:22:a9::19"
+    server: "2400:c620:22:a9::11f"
     port: 19408
     password: "han299792458%"
     sni: bing.com
@@ -202,7 +202,7 @@ proxies:
 
   - name: "🇳🇱 Amsterdam v6"
     type: hysteria2
-    server: "2a12:bec4:1821:5eb::11d"
+    server: "2a12:bec4:1821:5eb::108"
     port: 20044
     password: "han299792458%"
     sni: bing.com
