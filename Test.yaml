@@ -155,14 +155,6 @@ dns:
       - "https://dns.google/dns-query"
 
 proxies:  
-  - name: "节点不通请更新订阅"
-    type: hysteria2
-    server: 1.1.1.1
-    port: 12345
-    password: "123456"
-    sni: bing.com
-    skip-cert-verify: true
-    udp: true
     
   - name: "🇭🇰 HongKong v6"
     type: hysteria2
