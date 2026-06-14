@@ -156,7 +156,7 @@ dns:
 
 proxies:  
     
-  - name: "🇭🇰 HongKong v6"
+  - name: "🇭🇰 HongKong"
     type: hysteria2
     server: "2400:c620:22:a9::241"
     port: 19408
@@ -165,7 +165,7 @@ proxies:
     skip-cert-verify: true
 
     
-  - name: "🇺🇸 United States v6"
+  - name: "🇺🇸 United States"
     type: hysteria2
     server: "2001:470:d:f47:a26:1:0:14"
     port: 40443
@@ -174,28 +174,10 @@ proxies:
     skip-cert-verify: true
 
     
-  - name: "🇩🇪 Germany v6"
-    type: hysteria2
-    server: "2602:fb54:1801:3e::221"
-    port: 19408
-    password: "han299792458%"
-    sni: bing.com
-    skip-cert-verify: true
-
- 
   - name: "🇩🇪 Germany"
     type: hysteria2
-    server: "212.60.151.68"
-    port: 19408
-    password: "han299792458%"
-    sni: bing.com
-    skip-cert-verify: true
-
-
-  - name: "🇳🇱 Amsterdam v6"
-    type: hysteria2
-    server: "2a12:bec4:1821:5eb::154"
-    port: 20044
+    server: "2a14:6781:2001:49:cafe::2f"
+    port: 40001
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
@@ -203,8 +185,8 @@ proxies:
 
   - name: "🇳🇱 Amsterdam"
     type: hysteria2
-    server: 185.205.194.136
-    port: 41034
+    server: "2a12:bec4:1821:5eb::154"
+    port: 20044
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
@@ -215,23 +197,19 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - "🇭🇰 HongKong v6"
-      - "🇺🇸 United States v6"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 United States"
       - "🇳🇱 Amsterdam"
-      - "🇳🇱 Amsterdam v6"
-      - "🇩🇪 Germany v6"
-      - "🇩🇪 Germany"
+      - "🇩🇪 German"
 
   - name: 中国大陆
     type: select
     proxies:
       - DIRECT
-      - "🇭🇰 HongKong v6"
-      - "🇺🇸 United States v6"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 United States"
       - "🇳🇱 Amsterdam"
-      - "🇳🇱 Amsterdam v6"
-      - "🇩🇪 Germany v6"
-      - "🇩🇪 Germany"
+      - "🇩🇪 German"
 
 rules:
   - GEOIP,CN,中国大陆
