@@ -159,7 +159,7 @@ proxies:
   - name: "🇭🇰 HongKong"
     type: hysteria2
     server: "2400:c620:22:a9::241"
-    port: 19408
+    port: 12345
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
