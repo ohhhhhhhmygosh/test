@@ -38,26 +38,3 @@ proxies:
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
-
-proxy-groups:
-  - name: 手动选择
-    type: select
-    proxies:
-      - DIRECT
-      - "🇭🇰 HongKong"
-      - "🇺🇸 United States"
-      - "🇳🇱 Amsterdam"
-      - "🇩🇪 German"
-
-  - name: 中国大陆
-    type: select
-    proxies:
-      - DIRECT
-      - "🇭🇰 HongKong"
-      - "🇺🇸 United States"
-      - "🇳🇱 Amsterdam"
-      - "🇩🇪 German"
-
-rules:
-  - GEOIP,CN,中国大陆
-  - MATCH,手动选择
