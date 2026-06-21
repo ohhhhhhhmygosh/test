@@ -185,11 +185,20 @@ proxies:
 
   - name: "🇳🇱 Amsterdam"
     type: hysteria2
-    server: "2a12:bec4:1821:5eb::154"
-    port: 20044
+    server: "2a12:bec4:1821:36f::5a"
+    port:54321
     password: "han299792458%"
     sni: bing.com
     skip-cert-verify: true
+
+  - name: "🇳🇱 Amsterdam v4"
+    type: hysteria2
+    server: "185.205.194.136"
+    port:54321
+    password: "han299792458%"
+    sni: bing.com
+    skip-cert-verify: true
+
 
 
 proxy-groups:
